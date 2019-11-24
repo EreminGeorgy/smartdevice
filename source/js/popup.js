@@ -21,11 +21,6 @@
   window.closePopup = () => {
     popup.classList.remove('modal-show');
     document.removeEventListener('keydown', onPopupEscPress);
-    passwordCheck.forEach(function (elem) {
-      elem.className = '';
-      elem.classList.add('form__marker--neutral');
-    });
-    form.reset();
   };
 
   buttonOpen.addEventListener('click', () => {

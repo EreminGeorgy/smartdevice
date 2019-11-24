@@ -13,7 +13,7 @@
 }
 
 .page-footer__top .logo__text-big {
-  color: #203C42;
+  color: #203c42;
 }
 
 .page-footer__top .logo__text-small {
@@ -21,11 +21,11 @@
 }
 
 .page-footer__top h2 {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
-  color: #1B2D37;
+  color: #1b2d37;
   margin: 0 0 29px 0;
 }
 
@@ -75,7 +75,7 @@
 
 .page-footer__bottom {
   display: flex;
-  border-top: 1px solid #EBEBEB;
+  border-top: 1px solid #ebebeb;
   max-width: 1350px;
   margin: 14px auto;
   padding: 0 25px;
@@ -117,7 +117,7 @@
   .page-footer__floating-text {
     position: relative;
     top: 0;
-    left:0;
+    left: 0;
     margin-bottom: 31px;
   }
 

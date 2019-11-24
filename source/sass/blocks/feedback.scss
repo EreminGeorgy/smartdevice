@@ -1,6 +1,6 @@
 .feedback {
-	color: #FFFFFF;
-  background: #00B2FF url("../img/form-bg.jpg") no-repeat;
+  color: #ffffff;
+  background: #00b2ff url("../img/form-bg.jpg") no-repeat;
 }
 
 .feedback__wrapper {
@@ -10,15 +10,15 @@
 }
 
 .feedback h2 {
-	font-family: Roboto Condensed;
-	font-weight: normal;
-	font-size: 36px;
-	line-height: 51px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
   margin: 0 0 7px 0;
 }
 
 .feedback p {
-  font-family: PT Mono;
+  font-family: "PT Mono", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -26,61 +26,76 @@
 }
 
 .feedback form {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 570px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 570px;
   justify-content: space-between;
 }
 
 .feedback input {
   color: inherit;
   width: 254px;
-	height: 50px;
+  height: 50px;
   margin-bottom: 40px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border: none;
   padding-left: 16px;
 
   &::placeholder {
-  	color: inherit;
+    color: inherit;
+  }
+
+  &:hover,
+  &:focus {
+    background: rgba(255, 255, 255, 0.3);
   }
 }
 
 .feedback textarea {
   color: inherit;
-	width: 570px;
-	height: 154px;
+  width: 570px;
+  height: 154px;
   margin-bottom: 43px;
   padding: 16px 0 0 16px;
-	background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border: none;
 
-    &::placeholder {
-      font-size: 16px;
-      color: inherit;
+  &::placeholder {
+    font-size: 16px;
+    color: inherit;
+  }
+
+  &:hover,
+  &:focus {
+    background: rgba(255, 255, 255, 0.3);
   }
 }
 
 .feedback button {
   width: 270px;
-	height: 45px;
+  height: 45px;
   display: block;
-  font-family: Roboto Condensed;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 16px;
-	text-align: center;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: #ffffff;
   padding: 12px 35px;
-  border: 1px solid #FFFFFF;
-	box-sizing: border-box;
-	border-radius: 5px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
   margin-bottom: 30px;
   background: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .feedback label {
@@ -103,22 +118,23 @@
   overflow: hidden;
 }
 
-.feedback input[type="checkbox"]+span {
+.feedback input[type="checkbox"] + span {
   position: absolute;
   top: 0;
   left: -32px;
 
   width: 16px;
   height: 16px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 
-.feedback input[type="checkbox"]:focus+span {
-  border-color: #558CB7;
+.feedback input[type="checkbox"]:focus + span,
+.feedback input[type="checkbox"]:hover + span {
+  background: rgba(255, 255, 255, 0.3);
 }
 
-.feedback input[type="checkbox"]:checked+span::before {
+.feedback input[type="checkbox"]:checked + span::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -140,14 +156,13 @@
     width: 254px;
     height: 50px;
     margin-bottom: 40px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border: none;
     padding-left: 16px;
   }
 }
 
 @media (max-width: $tablet-width) {
-
   .feedback__wrapper {
     padding: 96px 15px 114px 15px;
   }

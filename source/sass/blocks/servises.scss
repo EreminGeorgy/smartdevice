@@ -1,5 +1,5 @@
 .servises {
-  background: #1B2D37;
+  background: #1b2d37;
 }
 
 .servises__wrapper {
@@ -9,60 +9,60 @@
 }
 
 .servises h2 {
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 47px;
 }
 
 .servises__list {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .servises__item {
-	background: #C4C4C4;
-	position: relative;
+  background: #c4c4c4;
+  position: relative;
   height: 620px;
 
-	&--circuit-board-production {
-		background: url("../img/cirquit-bg.jpg") no-repeat;
-	}
+  &--circuit-board-production {
+    background: url("../img/cirquit-bg.jpg") no-repeat;
+  }
 
-	&--circuit-board-mounting {
-		background: url("../img/mounting-bg.jpg") no-repeat;
-	}
+  &--circuit-board-mounting {
+    background: url("../img/mounting-bg.jpg") no-repeat;
+  }
 
-	&--lights {
-		background: url("../img/led-bg.jpg") no-repeat;
-	}
+  &--lights {
+    background: url("../img/led-bg.jpg") no-repeat;
+  }
 
-	& div {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-	}
+  & div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 
-	& div::before {
+  & div::before {
     content: "";
 
     position: absolute;
     width: 63px;
-		height: 63px;
+    height: 63px;
 
-		background: #00B2FF;
+    background: #00b2ff;
     bottom: 0;
     right: 0;
     z-index: 10;
   }
 
-	& div::after {
+  & div::after {
     content: "";
 
     position: absolute;
@@ -76,15 +76,12 @@
     z-index: 10;
     transform: rotate(45deg);
   }
-
 }
 
 .servises__item a {
-	text-decoration: none;
-	color: #ffffff;
-	display: block;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
   line-height: 0;
-	width: 370px;
+  width: 370px;
 }
-
-
