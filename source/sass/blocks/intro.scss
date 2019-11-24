@@ -50,7 +50,7 @@
   color: #ffffff;
   height: 55px;
   border: none;
-  margin:0 0 278px 98px;
+  margin: 0 0 278px 98px;
   padding: 0 45px;
   cursor: pointer;
 
@@ -68,9 +68,9 @@
 @media (max-width: $desktop-width) {
   .intro {
     background: url("../img/bg-cirquit-tablet.png") right 128px no-repeat,
-                url("../img/intro-bg-tablet.jpg") center 12px no-repeat;
+      url("../img/intro-bg-tablet.jpg") center 12px no-repeat;
     background-size: auto;
-    padding: 206px 0 0 12%;
+    padding: 206px 20% 0 12%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background:
@@ -85,14 +85,10 @@
     line-height: 70px;
   }
 
-  .intro {
-    padding-right: 20%;
-  }
-
   .intro__paragraph {
     font-size: 18px;
     line-height: 156.8%;
-    padding:0 40px 0 48px;
+    padding: 0 40px 0 48px;
     margin-bottom: 55px;
 
     &::before {
@@ -109,7 +105,7 @@
 @media (max-width: $tablet-width) {
   .intro {
     background: url("../img/bg-cirquit-mobile.png") right 128px no-repeat,
-                url("../img/intro-bg-mobile.jpg") -625px 17px no-repeat;
+      url("../img/intro-bg-mobile.jpg") -625px 17px no-repeat;
     background-size: auto;
     padding: 318px 16px 0 16px;
     margin: 0 auto;

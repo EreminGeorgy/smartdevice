@@ -1,6 +1,6 @@
 'use strict';
 
-(() => {
+(function() {
 
   const buttonClose = document.querySelector('.modal-close');
   const popup = document.querySelector('.modal');

@@ -6,17 +6,14 @@
 
 .logo__image {
   margin-right: 16px;
+  width: 52px;
+  height: 52px;
 }
 
 .logo__text {
   display: flex;
   flex-wrap: wrap;
   width: 134px;
-}
-
-.logo__image {
-  width: 52px;
-  height: 52px;
 }
 
 .logo__text-big {
@@ -37,14 +34,11 @@
 @media (max-width: $tablet-width) {
   .logo__image {
     margin-right: 16px;
+    width: 38px;
+    height: 38px;
   }
 
   .logo__text {
     display: none;
-  }
-
-  .logo__image {
-    width: 38px;
-    height: 38px;
   }
 }

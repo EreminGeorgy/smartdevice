@@ -1,6 +1,6 @@
 'use strict';
 
-(() => {
+(function() {
   const ESC_KEYCODE = 27;
   const ENTER_KEYCODE = 13;
 

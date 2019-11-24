@@ -57,7 +57,7 @@
 
 @media (max-width: $desktop-width) {
   .page-header__phone {
-    margin-left: 33px;
+    margin: 18px -10px 0 25px;
   }
 
   .page-header__mail svg {
@@ -90,10 +90,6 @@
     color: #ffffff;
     margin: 15px auto -85px auto;
     z-index: 1;
-  }
-
-  .page-header__phone {
-    margin: 18px -10px 0 25px;
   }
 }
 
