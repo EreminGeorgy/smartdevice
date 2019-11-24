@@ -1,0 +1,102 @@
+.page-header__wraper {
+	display: flex;
+	max-width: 1360px;
+  padding: 0 25px;
+	background: transparent;
+	color: #ffffff;
+  margin: 33px auto -85px auto;
+  z-index: 1;
+}
+
+.logo {
+	display: flex;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.logo__text {
+	display: flex;
+	flex-wrap: wrap;
+	width: 134px;
+}
+
+.logo__text-big {
+	font-family: Roboto Condensed;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 29px;
+}
+
+.logo__text-small {
+	font-family: Roboto;
+	font-size: 12px;
+	line-height: 14px;
+	color:  #788891;
+}
+
+.page-header__mail,
+.page-header__phone {
+	font-family: PT Mono;
+	font-size: 16px;
+	line-height: 18px;
+	position: relative;
+	text-decoration: none;
+	color: inherit;
+	margin: 10px 0 0 122px;
+}
+
+.page-header__button {
+  margin-left: 38px;
+
+  width: 180px;
+	height: 45px;
+  display: block;
+  font-family: Roboto Condensed;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+  color: #ffffff;
+
+  border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 5px;
+
+  background: none;
+
+  cursor: pointer;
+}
+
+@media (max-width: $desktop-width) {
+
+  .page-header__phone {
+    margin-left: 33px;
+  }
+
+  .page-header__mail svg {
+    width: 25px;
+    height: 19px;
+  }
+
+  .page-header__phone svg {
+    width: 24px;
+    height: 24px;
+  }
+  .page-header__mail span {
+    display: none;
+  }
+
+  .page-header__phone span{
+    display: none;
+  }
+
+  .reviews__button {
+    display: none;
+  }
+}
+
+
+

@@ -1,0 +1,131 @@
+.page-footer__top {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 65px 25px 0 25px;
+  justify-content: space-between;
+}
+
+.page-footer__top .logo {
+  margin-bottom: 53px;
+}
+
+.page-footer__top .logo__text-big {
+  color: #203C42;
+}
+
+.page-footer__top .logo__text-small {
+  color: #788891;
+}
+
+.page-footer__top h2 {
+  font-family: Roboto Condensed;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  color: #1B2D37;
+  margin: 0 0 29px 0;
+}
+
+.page-footer__floating-text {
+  position: absolute;
+  bottom: -60px;
+  left: 17%;
+}
+
+.page-footer__social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__social-item {
+  margin-right: 15px;
+}
+
+.page-footer__sections ul,
+.page-footer__contacts ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 100px;
+}
+
+.page-footer__sections li {
+  min-width: 310px;
+}
+
+.page-footer__sections a,
+.page-footer__contacts p,
+.page-footer__contacts li {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.page-footer__sections a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-footer__bottom {
+  display: flex;
+  border-top: 1px solid #EBEBEB;
+  max-width: 1350px;
+  margin: 14px auto;
+  padding: 0 25px;
+  justify-content: space-between;
+}
+
+@media (max-width: $desktop-width) {
+  .page-footer__sections ul {
+    max-height: 100%;
+  }
+
+  .page-footer__bottom-copyright {
+    display: none;
+  }
+
+  .page-footer__links {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__floating-text {
+    bottom: 290px;
+    left: 35%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer__sections ul {
+    display: none;
+  }
+
+  .page-footer__links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-footer__floating-text {
+    position: relative;
+    top: 0;
+    left:0;
+    margin-bottom: 31px;
+  }
+
+  .page-footer__top .logo {
+    margin: 0 auto 26px auto;
+  }
+
+  .page-footer__social-list {
+    margin-bottom: 54px;
+  }
+}

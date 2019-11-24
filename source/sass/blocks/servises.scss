@@ -1,0 +1,90 @@
+.servises {
+  background: #1B2D37;
+}
+
+.servises__wrapper {
+  margin: 0 auto;
+  padding: 93px 0 127px 0;
+  max-width: 1170px;
+}
+
+.servises h2 {
+  font-family: Roboto Condensed;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #FFFFFF;
+  margin-bottom: 47px;
+}
+
+.servises__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.servises__item {
+	background: #C4C4C4;
+	position: relative;
+  height: 620px;
+
+	&--circuit-board-production {
+		background: url("../img/cirquit-bg.jpg") no-repeat;
+	}
+
+	&--circuit-board-mounting {
+		background: url("../img/mounting-bg.jpg") no-repeat;
+	}
+
+	&--lights {
+		background: url("../img/led-bg.jpg") no-repeat;
+	}
+
+	& div {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	& div::before {
+    content: "";
+
+    position: absolute;
+    width: 63px;
+		height: 63px;
+
+		background: #00B2FF;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+	& div::after {
+    content: "";
+
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    bottom: 31px;
+    right: 31px;
+    z-index: 10;
+    transform: rotate(45deg);
+  }
+
+}
+
+.servises__item a {
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+  line-height: 0;
+	width: 370px;
+}
+
+
