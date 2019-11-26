@@ -86,7 +86,7 @@
 
   background: #ffffff;
   opacity: 0.1;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   &::placeholder {
     color: #ffffff;
@@ -140,9 +140,12 @@
 }
 
 .modal label {
-  max-width: 230px;
-  display: flex;
+  max-width: 350px;
+  display: block;
   position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 20px 0 0 29px;
 }
 
 .modal input[type="checkbox"] {
@@ -169,8 +172,8 @@
   box-sizing: border-box;
 }
 
-.feedback input[type="checkbox"]:focus + span,
-.feedback input[type="checkbox"]:hover + span {
+.modal input[type="checkbox"]:focus + span,
+.modal input[type="checkbox"]:hover + span {
   background: rgba(255, 255, 255, 0.3);
 }
 

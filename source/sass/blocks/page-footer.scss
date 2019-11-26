@@ -128,10 +128,12 @@
   }
 
   .page-footer__links {
-    justify-content: space-between;
     margin: 0 auto 37px auto;
     border-bottom: 1px solid #ebebeb;
     padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
   }
 
   .page-footer__links .logo {
@@ -154,12 +156,6 @@
 
   .page-footer__sections-list ul {
     max-height: 100%;
-  }
-
-  .page-footer__links {
-    flex-basis: 100%;
-    display: flex;
-    justify-content: space-between;
   }
 
   .page-footer__floating-text {

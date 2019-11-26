@@ -1,5 +1,10 @@
 .about {
   background: #ffffff url("../img/about-bg.jpg") left -145px no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/about-bg@2x.jpg") left -145px no-repeat;
+    background-size: 100%;
+  }
 }
 
 .about__wrapper {
@@ -111,7 +116,12 @@
 
 @media (max-width: $desktop-width) {
   .about {
-    background: #ffffff url("../img/about-bg-tablet.jpg") center 37px no-repeat;
+    background: #ffffff url("../img/about-bg-tablet.jpg") left 37px no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/about-bg-tablet@2x.jpg") left -145px no-repeat;
+      background-size: 100%;
+    }
   }
 
   .about__item {
@@ -182,12 +192,7 @@
     font-size: 16px;
     line-height: 22px;
     text-overflow: ellipsis;
-    max-height: 90px;
     overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .about__story p {
     max-height: 177px;
     margin: 0 0 38px;
   }

@@ -81,10 +81,9 @@
     content: "";
 
     position: absolute;
-    width: 10px;
     width: 6px;
     height: 6px;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     border-bottom-color: transparent;
     border-left-color: transparent;
     bottom: 27px;
@@ -112,7 +111,6 @@
 }
 
 @media (max-width: $desktop-width) {
-
   .servises__wrapper {
     margin: 0 auto;
     padding: 50px 25px 32px 25px;
@@ -169,7 +167,6 @@
 
 @media (max-width: $tablet-width) {
   .servises__wrapper {
-    overflow: hidden;
     padding: 50px 0 32px;
   }
 
@@ -178,7 +175,7 @@
     line-height: 140.62%;
     padding-right: 0;
     margin-bottom: 42px;
-    margin-left: 25px
+    margin-left: 25px;
   }
 
   .servises__item {
@@ -202,4 +199,3 @@
     padding: 19px 45% 0 36px;
   }
 }
-
