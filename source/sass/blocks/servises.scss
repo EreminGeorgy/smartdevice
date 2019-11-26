@@ -4,7 +4,7 @@
 
 .servises__wrapper {
   margin: 0 auto;
-  padding: 93px 0 127px 0;
+  padding: 60px 0 127px 0;
   max-width: 1170px;
 }
 
@@ -14,7 +14,7 @@
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
-  margin-bottom: 47px;
+  margin-bottom: 52px;
 }
 
 .servises__list {
@@ -32,15 +32,30 @@
   height: 620px;
 
   &--circuit-board-production {
-    background: url("../img/cirquit-bg.jpg") no-repeat;
+    background: url("../img/cirqit-card-desktop.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/cirqit-card-desktop@2x.jpg") no-repeat;
+      background-size: 100% auto;
+    }
   }
 
   &--circuit-board-mounting {
-    background: url("../img/mounting-bg.jpg") no-repeat;
+    background: url("../img/mounting-card-desktop.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/mounting-card-desktop@2x.jpg") no-repeat;
+      background-size: 100% auto;
+    }
   }
 
   &--lights {
-    background: url("../img/led-bg.jpg") no-repeat;
+    background: url("../img/led-card-desktop.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/led-card-desktop@2x.jpg") no-repeat;
+      background-size: 100% auto;
+    }
   }
 
   & div {
@@ -67,12 +82,13 @@
 
     position: absolute;
     width: 10px;
-    height: 10px;
-    border: 1px solid white;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
     border-bottom-color: transparent;
     border-left-color: transparent;
-    bottom: 31px;
-    right: 31px;
+    bottom: 27px;
+    right: 30px;
     z-index: 10;
     transform: rotate(45deg);
   }
@@ -85,3 +101,105 @@
   line-height: 0;
   width: 370px;
 }
+
+.servises__item h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  padding: 49px 45% 0 43px;
+}
+
+@media (max-width: $desktop-width) {
+
+  .servises__wrapper {
+    margin: 0 auto;
+    padding: 50px 25px 32px 25px;
+  }
+
+  .servises h2 {
+    margin: 0 0 50px 0;
+    font-size: 32px;
+    line-height: 140.62%;
+    padding-right: 90px;
+  }
+
+  .servises__item {
+
+    height: 256px;
+    margin-bottom: 46px;
+
+    &--circuit-board-production {
+      background: url("../img/cirqit-card-tablet.jpg") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/cirqit-card-tablet@2x.jpg") no-repeat;
+        background-size: 100% auto;
+      }
+    }
+
+    &--circuit-board-mounting {
+      background: url("../img/mounting-card-tablet.jpg") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/mounting-card-tablet@2x.jpg") no-repeat;
+        background-size: 100% auto;
+      }
+    }
+
+    &--lights {
+      background: url("../img/led-card-tablet.jpg") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/led-card-tablet@2x.jpg") no-repeat;
+        background-size: 100% auto;
+      }
+    }
+  }
+
+  .servises__list {
+    flex-direction: column;
+  }
+
+  .servises h3 {
+    padding: 41px 45% 0 43px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .servises__wrapper {
+    overflow: hidden;
+    padding: 50px 0 32px;
+  }
+
+  .servises h2 {
+    font-size: 28px;
+    line-height: 140.62%;
+    padding-right: 0;
+    margin-bottom: 42px;
+    margin-left: 25px
+  }
+
+  .servises__item {
+    width: 290px;
+    margin: 0 auto 30px auto;
+
+    &--circuit-board-production {
+      background: url("../img/cirqit-card-mobile.jpg") no-repeat;
+    }
+
+    &--circuit-board-mounting {
+      background: url("../img/mounting-card-mobile.jpg") no-repeat;
+    }
+
+    &--lights {
+      background: url("../img/led-card-mobile.jpg") no-repeat;
+    }
+  }
+
+  .servises h3 {
+    padding: 19px 45% 0 36px;
+  }
+}
+

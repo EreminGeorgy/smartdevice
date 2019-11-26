@@ -2,6 +2,11 @@
   background: #1b2d37 url("../img/intro-bg-desktop.jpg") no-repeat;
   padding: 316px 0 0 13%;
   min-width: 275px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/intro-bg-desktop@2x.jpg") no-repeat;
+    background-size: 100% auto;
+  }
 }
 
 .intro__title {
@@ -67,16 +72,15 @@
 
 @media (max-width: $desktop-width) {
   .intro {
+    padding: 206px 20% 0 12%;
     background: url("../img/bg-cirquit-tablet.png") right 128px no-repeat,
       url("../img/intro-bg-tablet.jpg") center 12px no-repeat;
     background-size: auto;
-    padding: 206px 20% 0 12%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background:
-        url("../img/img/bg-cirquit-tablet.png.png@2x.png") right 256px no-repeat,
-        url("../img/intro-bg-tablet.jpg.jpg") center 24px no-repeat;
-      background-size: auto;
+      background: url("../img/bg-cirquit-tablet@2x.png") right 128px no-repeat,
+        url("../img/intro-bg-tablet@2x.jpg") center 12px no-repeat;
+      background-size: 100% auto;
     }
   }
 
@@ -110,13 +114,6 @@
     padding: 318px 16px 0 16px;
     margin: 0 auto;
     padding-bottom: 70px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background:
-        url("../img/img/bg-cirquit-mobile.png@2x.png") right 128px no-repeat,
-        url("../img/intro-bg-mobile.jpg@2x.jpg") -1250px 34px no-repeat;
-      background-size: auto;
-    }
   }
 
   .intro__title {
@@ -125,8 +122,10 @@
   }
 
   .intro__paragraph {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 156.8%;
+    padding: 0 16px 0 48px;
+    margin-bottom: 43px;
   }
 
   .intro__button-text-mobile {
